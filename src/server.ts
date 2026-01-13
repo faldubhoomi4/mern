@@ -1,5 +1,5 @@
-function welcome(name: string){
-    console.log(`Welcome to the Auth Service, ${name}!`);
+function welcome(name: string) {
+  console.log('Welcome to the Auth Service, ${name}!');
 }
 
-welcome("Developer");
+welcome('Developer');
