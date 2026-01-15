@@ -18,7 +18,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node src/server.ts",
     "format:fix": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "lint:fix": "eslint .",
+    "lint:check": "eslint . --fix",
+    "prepare": "husky"
   },
   "dependencies": {
     "undici-types": "^7.16.0"
@@ -31,9 +34,17 @@
     "eslint": "^9.39.2",
     "eslint-plugin-react": "^7.37.5",
     "globals": "^17.0.0",
+    "husky": "^9.1.7",
     "jiti": "^2.6.1",
+    "lint-staged": "^16.2.7",
     "prettier": "3.7.4",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      " npm run format:fix ",
+      "npm run int:fix"
+    ]
   }
 }
