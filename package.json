@@ -1,54 +1,54 @@
 {
-  "name": "auth-service",
-  "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/faldubhoomi4/mernstack#readme",
-  "bugs": {
-    "url": "https://github.com/faldubhoomi4/mernstack/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/faldubhoomi4/mernstack.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node src/server.ts",
-    "format:fix": "prettier . --write",
-    "format:check": "prettier . --check",
-    "lint:fix": "eslint .",
-    "lint:check": "eslint . --fix",
-    "lint-staged": "lint-staged",
-    "prepare": "husky"
-  },
-  "dependencies": {
-    "dotenv": "^17.2.3",
-    "express": "^5.2.1",
-    "undici-types": "^7.16.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "@types/express": "^5.0.6",
-    "@types/node": "^25.0.8",
-    "@typescript-eslint/eslint-plugin": "^8.53.0",
-    "@typescript-eslint/parser": "^8.53.0",
-    "eslint": "^9.39.2",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^17.0.0",
-    "husky": "^9.1.7",
-    "jiti": "^2.6.1",
-    "lint-staged": "^16.2.7",
-    "prettier": "3.7.4",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.0"
-  },
-  "lint-staged": {
-    "*.ts": [
-      "npm run format:fix",
-      "npm run lint:fix"
-    ]
-  }
+    "name": "auth-service",
+    "version": "1.0.0",
+    "description": "",
+    "homepage": "https://github.com/faldubhoomi4/mernstack#readme",
+    "bugs": {
+        "url": "https://github.com/faldubhoomi4/mernstack/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/faldubhoomi4/mernstack.git"
+    },
+    "license": "ISC",
+    "author": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node src/server.ts",
+        "format:fix": "prettier . --write",
+        "format:check": "prettier . --check",
+        "lint:fix": "eslint .",
+        "lint:check": "eslint . --fix",
+        "lint-staged": "lint-staged",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "dotenv": "^17.2.3",
+        "express": "^5.2.1",
+        "undici-types": "^7.16.0"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.2",
+        "@types/express": "^5.0.6",
+        "@types/node": "^25.0.8",
+        "@typescript-eslint/eslint-plugin": "^8.53.0",
+        "@typescript-eslint/parser": "^8.53.0",
+        "eslint": "^9.39.2",
+        "eslint-plugin-react": "^7.37.5",
+        "globals": "^17.0.0",
+        "husky": "^9.1.7",
+        "jiti": "^2.6.1",
+        "lint-staged": "^16.2.7",
+        "prettier": "3.7.4",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.53.0"
+    },
+    "lint-staged": {
+        "*.ts": [
+            "npm run format:fix",
+            "npm run lint:fix"
+        ]
+    }
 }
